@@ -12,4 +12,8 @@ StartDate Date not null
 insert into EmployeePayroll(EmployeeName, Salary, StartDate)
 values('Bruce', 290000, convert (date,'1989-12-28'));
 
-Select * from EmployeePayroll;
+Select * from EmployeePayroll;   --CRUD-Create,Retrieve,Update,Delete
+select EmployeeName,Salary from EmployeePayroll where EmployeeName='Bruce'; --Name-BruceisRetrieved
+
+
+
