@@ -1,0 +1,15 @@
+--UC1
+create database payroll_service;
+use [payroll_service];
+--UC2
+create table EmployeePayroll(
+EmployeeId int identity(1,1) primary key,
+EmployeeName varchar(255) not null,
+Salary float not null,
+StartDate Date not null
+);
+
+insert into EmployeePayroll(EmployeeName, Salary, StartDate)
+values('Bruce', 290000, convert (date,'1989-12-28'));
+
+Select * from EmployeePayroll;
