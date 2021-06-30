@@ -23,6 +23,11 @@ add Gender Varchar(8);
 UPDATE EmployeePayroll set Gender='male' where EmployeeName='Bruce'or EmployeeName='prakash' or EmployeeName='Jack';
 
 UPDATE EmployeePayroll set Gender ='Female' where EmployeeName='Terisa' or EmployeeName='Gita' or EmployeeName='Babita';
+Select COUNT(EmployeeID) from EmployeePayroll;
+Select SUM(Salary) from EmployeePayroll;
+Select AVG(Salary) from EmployeePayroll;
+Select MAX(Salary) from EmployeePayroll;
+Select Min(Salary) from EmployeePayroll;
 
 
 
