@@ -29,5 +29,14 @@ Select AVG(Salary) from EmployeePayroll;
 Select MAX(Salary) from EmployeePayroll;
 Select Min(Salary) from EmployeePayroll;
 
+Alter Table EmployeePayroll
+Add Department varchar(30) default 'somedept';
 
+UPDATE EmployeePayroll set Department ='Marketing' where EmployeeName='terisa';
+
+alter table EmployeePayroll add PhoneNumber int;
+alter table EmployeePayroll add Address varchar(200) not null default 'World';
+
+update EmployeePayroll set PhoneNumber =2234123123 where EmployeeName ='terisa';
+update EmployeePayroll set PhoneNumber =2453242424 where EmployeeName ='terisa';
 
